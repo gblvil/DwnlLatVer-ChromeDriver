@@ -16,3 +16,7 @@ $ChromeDriver = New-Object OpenQA.Selenium.Chrome.ChromeDriver
 $URL = 'https://google.com/'
 
 $ChromeDriver.Navigate().GoToURL($URL)
+
+Start-Sleep -s 7
+$ChromeDriver.Close()
+$ChromeDriver.Quit()
